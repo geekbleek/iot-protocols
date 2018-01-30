@@ -16,6 +16,8 @@ wss.on('connection', function connection(ws, req) {
 
 });
 
+console.log('WebSocket Server listening on port 8080');
+
 
 
 
