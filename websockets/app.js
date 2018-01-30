@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const wss = new WebSocket.Server({ port: 8080 });
+const wss = new WebSocket.Server({ port: 9000 });
 
 wss.on('connection', function connection(ws, req) {
 
@@ -16,7 +16,7 @@ wss.on('connection', function connection(ws, req) {
 
 });
 
-console.log('WebSocket Server listening on port 8080');
+console.log('WebSocket Server listening on port 9000');
 
 
 
