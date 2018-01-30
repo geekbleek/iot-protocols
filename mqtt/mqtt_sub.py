@@ -2,12 +2,11 @@ import paho.mqtt.client as mqtt
 
 broker_ip = "128.107.70.30" #external Broker when running local [mqtt.cisco.com]
 broker_port = 1883
-#mqtt_topic = 'devnetzone/mqtt/topic'
-train_topic = 'devnetzone/train/data'
+city_topic = 'devnet/city/#'
 
 class ReadMsg:
     def on_connect(self, master, obj, flags, rc):
-        self.master.subscribe(train_topic) # change MQTT topic to reflect your bot
+        self.master.subscribe(city_topic) # change MQTT topic to reflect your bot
 
     def on_message(self, master, obj, msg):
         msgStr = msg.payload.decode("utf-8")
