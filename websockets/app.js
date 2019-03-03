@@ -12,31 +12,13 @@ wss.on('connection', function connection(ws, req) {
 		//Send a response to the WebSocket message
 		ws.send('Here is the data you just sent: '+message);
 
+		// //Send Delayed Second Response
+		// setTimeout(() => {
+		// 	ws.send('Here is an unsolicited response to: '+message);
+		// }, 5000);
+
 	});
 
 });
 
 console.log('WebSocket Server listening on port 9000');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// //Send Delayed Second Response
-// setTimeout(() => {
-// 	ws.send('Here is an unsolicited response to: '+message);
-// }, 5000);
