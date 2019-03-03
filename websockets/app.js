@@ -19,6 +19,10 @@ wss.on('connection', function connection(ws, req) {
 
 	});
 
+	ws.on('error', function (err) {
+		console.error(err);
+	})
+
 });
 
 console.log('WebSocket Server listening on port 9000');
