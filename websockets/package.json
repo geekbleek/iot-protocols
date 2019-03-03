@@ -1,7 +1,8 @@
 {
   "name": "websockets",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Node.js WebSocker server, to be used to learn websocket protocol basics.",
+  "repository": "https://github.com/geekbleek.com/iot-protocols",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
